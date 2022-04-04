@@ -1,9 +1,9 @@
 
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 
@@ -69,4 +69,28 @@ main {
 footer {
   height: 50px;
   background-color: #AAAAAA;
+}
+
+
+
+
+/* レスポンシブ対応 */
+
+@media screen and (max-width: 768px) {
+
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .step-box {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .step-box:last-child {
+    margin-bottom: 0px;
+  }
+
 }
